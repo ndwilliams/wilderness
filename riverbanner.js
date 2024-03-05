@@ -1,9 +1,12 @@
 const riverBanner = () => {
-console.log('***************************************************')
-console.log('*****              R I V E R S                *****')
-console.log('***************************************************')
-console.log("River DETAILS:")
-console.log("------------------------")
+	console.log("***************************************************")
+	console.log("*****              R I V E R S                *****")
+	console.log("***************************************************")
 }
 
-module.exports = { riverBanner }
+const riverDetailsBanner = () => {
+	console.log("River DETAILS:")
+	console.log("------------------------")
+}
+
+module.exports = { riverBanner, riverDetailsBanner }
