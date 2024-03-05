@@ -1,0 +1,81 @@
+title Bjorn's Wilderness Adventures
+
+sequenceDiagram
+    participant Bjorn
+    participant Functions
+    participant Data
+    Bjorn->>Data: May I please have all the trails & river data?
+    Data-->>Bjorn: Sure! Here you go.
+    Bjorn-->Functions: May I please have all the function references?
+    Functions-->>Bjorn:  Of course. Here's an object containing all of them.
+    note right of Bjorn: Display ASCII Banner
+    note right of Bjorn: Display "Trails" ASCII Banner
+     note right of Bjorn: Display "Trail Details" ASCII Banner
+     loop 
+Bjorn->>Bjorn: Display all the trail details.
+    end
+    Bjorn->>Functions: I need the total trail miles
+    loop
+    Functions->>Functions: Calculate and return total trail mileage.
+    end
+    Functions-->>Bjorn: Here's the total trail mileage.
+    note right of Bjorn: Display Total Trail Mileage
+    Bjorn->>Functions: I need the shortest trail.
+    loop
+    Functions->>Functions: Identify the shortest trail.
+    end
+    Functions-->>Bjorn: Here's the shortest trail.
+    note right of Bjorn: Display Shortest Trail
+    Bjorn->>Functions: I need the longest trail.
+    loop
+    Functions->>Functions: Identify the longest trail.
+    end
+    Functions-->>Bjorn: Here's the longest trail.
+    note right of Bjorn: Display Longest Trail
+     Bjorn->>Functions: I need the least expensive trail.
+    loop 
+        Functions->>Functions: Identify the least expensive trail.
+    end
+    Functions-->>Bjorn: Here's the least expensive trail.
+    note right of Bjorn: Display The Least Expensive Trail
+    Bjorn->>Functions: I need the most expensive trail.
+    loop 
+    Functions->>Functions: Identify the most expensive trail.
+    end
+    Functions-->>Bjorn: Here's the most expensive trail.
+    note right of Bjorn: Display The Most Expensive Trail
+    note right of Bjorn: Display "Rivers" ASCII Banner
+    note right of Bjorn: Display "River Details" ASCII Banner
+    loop 
+Bjorn->>Bjorn: Display River Details.
+    end
+    Bjorn->>Functions: I need the total river kilometers
+    loop
+    Functions->>Functions: Calculate and return total river length.
+    end
+    Functions-->>Bjorn: Here's the total river kilometers.
+    note right of Bjorn: Display Total River Length
+    Bjorn->>Functions: I need the shortest river.
+    loop
+    Functions->>Functions: Identify the shortest river.
+    end
+    Functions-->>Bjorn: Here's the shortest river.
+    note right of Bjorn: Display Shortest River
+    Bjorn->>Functions: I need the longest river.
+    loop
+    Functions->>Functions: Identify the longest river.
+    end
+    Functions-->>Bjorn: Here's the longest river.
+    note right of Bjorn: Display Longest River
+     Bjorn->>Functions: I need the least expensive river.
+    loop 
+        Functions->>Functions: Identify the least expensive river.
+    end
+    Functions-->>Bjorn: Here's the least expensive river.
+    note right of Bjorn: Display The Least Expensive River
+    Bjorn->>Functions: I need the most expensive river.
+    loop 
+    Functions->>Functions: Identify the most expensive river.
+    end
+    Functions-->>Bjorn: Here's the most expensive river.
+    note right of Bjorn: Display The Most Expensive River
